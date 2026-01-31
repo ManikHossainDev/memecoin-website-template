@@ -56,7 +56,7 @@ const Nav = () => {
             <Link
               key={item.name}
               href={item.href}
-              className={`transition duration-200 text-gray-900 text-shadow-duis-not-hover md:text-xl xl:text-2xl font-bold font-stopbuck tracking-wider hover:text-[#FF080E] hover:decoration-solid hover:decoration-gray-500`}
+              className={`transition duration-200 text-gray-900 text-shadow-ANTSs-not-hover md:text-xl xl:text-2xl font-bold font-stopbuck tracking-wider hover:text-[#FF080E] hover:decoration-solid hover:decoration-gray-500`}
             >
               {item.name}
             </Link> 
@@ -70,8 +70,7 @@ const Nav = () => {
             target="_blank"
             className="transition duration-200 font-stopbuck text-sm sm:text-lg md:text-xl xl:text-2xl rounded-xl px-2 sm:px-3.5 py-1.5 sm:py-2.5 font-medium text-[#000] hover:text-[#FF080E] shadow-2xl bg-white hover:bg-transparent hover:outline-red-500 outline outline-2 outline-offset-0"
           >
-            Buy $DUIS
-          </Link>
+            Buy $ANTS          </Link>
         </div>
       </div>
     </nav>

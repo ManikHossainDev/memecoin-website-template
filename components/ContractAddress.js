@@ -21,7 +21,7 @@ const ContractAddress = () => {
 
   return (
     <div className="group relative block">
-      <span className="absolute inset-0 bg-duis rounded-xl border-2 border-dashed border-black"></span>
+      <span className="absolute inset-0 bg-red-500 rounded-xl border-2 border-dashed border-black"></span>
 
       <div className="relative h-full transform rounded-xl border-2 border-black bg-white transition-transform -translate-x-2 -translate-y-2 group-hover:translate-x-0 group-hover:translate-y-0">
         <div className="rounded-xl relative shadow-lg shadow-gray-700 hover:shadow-none transition duration-300">
@@ -34,7 +34,7 @@ const ContractAddress = () => {
 
             <button
               onClick={copyText}
-              className="absolute end-1 top-1/2 -translate-y-1/2 transition duration-200 font-stopbuck text-2xl rounded-xl px-3.5 py-2.5 font-medium text-duis shadow-2xl bg-gray-700 hover:bg-duis hover:text-gray-800 hover:outline-black outline outline-2 outline-offset-0"
+              className="absolute end-1 top-1/2 -translate-y-1/2 transition duration-200 font-stopbuck text-2xl rounded-xl px-3.5 py-2.5 font-medium text-red-500 shadow-2xl bg-gray-700 hover:bg-red-500 hover:text-gray-800 hover:outline-black outline outline-2 outline-offset-0"
             >
               <Copy />
             </button>

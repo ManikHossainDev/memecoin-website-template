@@ -22,57 +22,57 @@ export default function Home() {
         <Exchanges />
         <div className="max-w-[85rem] mx-auto mt-24">
           <span className="flex items-center">
-            <span className="h-[3px] flex-1 bg-duis"></span>
+            <span className="h-[3px] flex-1 bg-red-500"></span>
             <div>
               <Image
                 className=""
                 src="/collection/5.png"
                 width={300}
                 height={300}
-                alt="dui-5"
+                alt="ANTS-5"
               />
             </div>
-            <span className="h-[3px] flex-1 bg-duis"></span>
+            <span className="h-[3px] flex-1 bg-red-500"></span>
           </span>
         </div>
 
         <Tokenomics />
         <div className="max-w-[85rem] mx-auto mt-24">
           <span className="flex items-center">
-            <span className="h-[3px] flex-1 bg-duis"></span>
+            <span className="h-[3px] flex-1 bg-red-500"></span>
             <div>
               <Image
                 className=""
-                src="/collection/7.png"
+                src="/collection/fireants-ants.gif"
                 width={300}
                 height={300}
-                alt="dui-7"
+                alt="ANTS-7"
               />
             </div>
-            <span className="h-[3px] flex-1 bg-duis"></span>
+            <span className="h-[3px] flex-1 bg-red-500"></span>
           </span>
         </div>
 
         <HowToBuy />
         <div className="text-center">
-          <div className="flex justify-center">
+          <div className="flex justify-center space-x-5 md:space-x-16 xl:space-x-24">
             <Image
               className="hidden md:block"
-              src="/collection/6.png"
-              width={300}
-              height={300}
-              alt="dui-6"
+              src="/collection/ant_08.png"
+              width={100}
+              height={100}
+              alt="ANTS-6"
             />
             <Image
               className=""
-              src="/collection/8.png"
-              width={300}
-              height={300}
-              alt="dui-8"
+              src="/collection/ant_09.png"
+              width={100}
+              height={100}
+              alt="ANTS-8"
             />
           </div>
           <div className="mt-5">
-            <p className="font-stopbuck text-2xl text-black">Woof! Woof!</p>
+            <p className="font-stopbuck text-2xl text-black">Chrr! Chrr!</p>
           </div>
         </div>
         {/* <WallOfLove /> */}

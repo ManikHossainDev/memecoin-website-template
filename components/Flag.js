@@ -10,7 +10,7 @@ const Flag = ({ props: { flag, title, link } }) => {
         <div>
           <FlagComponent />
         </div>
-        <div className=" transition-opacity duration-300 absolute opacity-0 group-hover:block group-hover:opacity-100 bg-duis text-white text-shadow rounded-2xl py-5 px-9 bg-opacity-75 flex justify-center w-fit ">
+        <div className=" transition-opacity duration-300 absolute opacity-0 group-hover:block group-hover:opacity-100 bg-ANTSs text-white text-shadow rounded-2xl py-5 px-9 bg-opacity-75 flex justify-center w-fit ">
           <h3 className="font-stopbuck text-3xl">{title}</h3>
         </div>
       </div>

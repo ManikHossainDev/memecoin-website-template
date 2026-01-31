@@ -85,15 +85,16 @@ const About = () => {
         </div>
       </div>
 
-      <div id="about" className=" my-1 px-1 md:px-2 xL:px-4 py-10 sm:py-14 mx-auto">
-        <div className="my-7 md:my-10">
+      <div id="about" className=" my-7 md:my-10 xl:mt-20 px-1 md:px-2 xL:px-4 py-10 sm:pt-14 mx-auto">
+        <div className=" mb-5">
           <h2 className="font-stopbuck text-4xl  xl:text-6xl text-red-500 text-shadow text-center mt-14">
-            About Dúi
+            About Ants
           </h2>
           <h3 className="font-stopbuck text-2xl text-center italic text-black">
-            {`(Nguyen Van Dui)`}
+            {`(ANTS Community Era)`}
           </h3>
         </div>
+          
         <div className="xl:container mx-auto grid lg:grid-cols-2 gap-6 items-stretch">
   {/* Video Section */}
   <div className="w-full h-full">
@@ -162,24 +163,27 @@ const About = () => {
       </div>
       
     </div>
-    <div className="mt-10 font-mono text-md md:text-lg xl:text-2xl text-[#33271e] tracking-widest text-center">
-          <p>
-            Unfortunately 🥹, <span className="text-md md:text-lg xl:text-2xl font-bold">Dui</span>{" "}
-            passed away on{" "}
-            <span className="italic font-semibold">October 18, 2023</span>,
-            after a tragic snake🐍 bite.
-          </p>
-          <p className="text-md md:text-lg xl:text-2xl p-10">
-            But now{" "}
-            <span className="text-md md:text-lg xl:text-2xlfont-bold underline decoration-duis">
-              Dui
-            </span>{" "}
-            is forever on{" "}
-            <span className="text-md md:text-lg xl:text-2xl bg-gradient-to-r from-[#9945FF] to-[#14F195] inline-block text-transparent bg-clip-text font-bold">
-              Solana
-            </span>{" "}
-          </p>
-        </div>
+    <div className="xl:container mx-auto xl:mt-10 font-mono text-base md:text-lg xl:text-xl text-[#33271e] tracking-widest text-center">
+  <p>
+    From the very beginning 🐜,{" "}
+    <span className="text-base md:text-lg xl:text-2xl font-bold">ANTS</span>{" "}
+    was built on fairness, transparency, and long-term cooperation.
+    It is not the result of hype or short-term speculation, but a
+    disciplined, community-driven initiative.
+  </p>
+
+  <p className="text-base md:text-lg xl:text-2xl xl:p-10">
+    Today,{" "}
+    <span className="text-md md:text-lg xl:text-2xl font-bold underline decoration-ANTSs">
+      ANTS
+    </span>{" "}
+    moves forward with the strength of a united community, and is
+    built to endure forever on{" "}
+    <span className="text-md md:text-lg xl:text-2xl bg-gradient-to-r from-[#9945FF] to-[#14F195] inline-block text-transparent bg-clip-text font-bold">
+      Binance Smart Chain
+    </span>
+  </p>
+</div>
     </div>
     </div>
   );

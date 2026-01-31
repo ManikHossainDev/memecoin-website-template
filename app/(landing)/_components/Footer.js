@@ -13,11 +13,11 @@ const Footer = () => {
         </div>
         <div>
           <p className="text-md/relaxed text-gray-500">
-            © &nbsp; <span className="text-duis text-shadow">DUIS</span>{" "}
-            community 2024.
+            © &nbsp; <span className="text-red-500 text-shadow">ANTs</span>{" "}
+            community 2026.
             <br />
-            <span className="underline decoration-duis">
-              {"All cutes reserved for duis's dawgs."}
+            <span className="underline decoration-ANTSs">
+              {"All cuteness reserved for ANTS."}
             </span>
           </p>
          
@@ -42,7 +42,7 @@ const Footer = () => {
                 src="/collection/ant_01.png"
                 width={100}
                 height={100}
-                alt="dui 1"
+                alt="ANTS 1"
               />
             </div>
             <div>
@@ -51,7 +51,7 @@ const Footer = () => {
                 src="/collection/ant_13.png"
                 width={100}
                 height={100}
-                alt="dui 2"
+                alt="ANTS 2"
               />
             </div>
           </div>
@@ -62,7 +62,7 @@ const Footer = () => {
                 src="/collection/ant_07.png"
                 width={100}
                 height={100}
-                alt="dui 4"
+                alt="ANTS 4"
               />
             </div>
             <div>
@@ -71,7 +71,7 @@ const Footer = () => {
                 src="/collection/ant_02.png"
                 width={100}
                 height={100}
-                alt="dui 3"
+                alt="ANTS 3"
               />
             </div>
           </div>

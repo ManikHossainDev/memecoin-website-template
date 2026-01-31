@@ -1,8 +1,8 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Dúi (aka Nguyen Van Dui) | Solana",
-  description: "Dui is forever on Solana",
+  title: "ANTS Token | Community-Driven Digital Asset",
+  description: "ANTS - A community-driven digital asset ecosystem built on fairness, transparency, and long-term cooperation",
 };
 
 export default function RootLayout({ children }) {

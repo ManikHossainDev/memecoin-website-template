@@ -2,75 +2,61 @@ import React from "react";
 import OrderCard from "@/components/OrderCard";
 import ContractAddress from "@/components/ContractAddress";
 
-const HowToBuy = () => {
+const AntsSummary = () => {
   return (
-    <div id="buy" className="max-w-[85rem] mx-auto p-12">
+    <div id="ants" className="max-w-[85rem] mx-auto p-8 md:p-12">
+      {/* Header */}
       <div className="my-16">
-        <h2 className="font-stopbuck text-6xl text-duis text-shadow text-center">
-          How To Buy
+        <h2 className="font-stopbuck text-sm sm:text-base md:text-xl xl:text-6xl text-red-500 text-shadow text-center">
+          ANTS Project Overview
         </h2>
-        <h3 className="font-stopbuck text-2xl text-center text-black">
-          {`Just 4️⃣ steps to get rich 🤑`}
+        <h3 className="font-stopbuck text-sm sm:text-base md:text-2xl text-center text-black">
+          {`Community-Driven, Transparent, Sustainable`}
         </h3>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-36 justify-items-center">
-        <OrderCard order={1} title={"create a wallet"} style={"rotate-3"}>
-          <span>
-            Download{" "}
-            <a
-              href="https://phantom.app"
-              target="_blank"
-              className="uppercase font-extrabold text-[#ab9ff2] text-2xl"
-            >
-              phantom
-            </a>{" "}
-            or your{" "}
-            <span className="bg-gradient-to-r from-[#9945FF] to-[#14F195] inline-block text-transparent bg-clip-text uppercase font-extrabold text-2xl">
-              Solana
-            </span>{" "}
-            wallet of choice and follow the simple steps to create a new
-            account.
+
+      {/* Vision & Principles */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 justify-items-center">
+        <OrderCard order={1} title={"Vision & Principles"} style={"rotate-3"}>
+          <span className="text-xs sm:text-sm md:text-base">
+            <strong>Stability</strong> over speculation.<br />
+            <strong>Collective growth</strong> over individual gain.<br />
+            Built on transparency, trust, and long-term thinking.
           </span>
         </OrderCard>
-        <OrderCard order={2} title={"connect to dex"} style={"-rotate-6"}>
-          <span>
-            If you don’t have any{" "}
-            <span className="bg-gradient-to-r from-[#9945FF] to-[#14F195] inline-block text-transparent bg-clip-text uppercase font-extrabold text-2xl">
-              $SOL
-            </span>
-            , you can buy directly on{" "}
-            <a
-              href="https://phantom.app"
-              target="_blank"
-              className="uppercase font-extrabold text-[#ab9ff2] text-2xl"
-            >
-              phantom
-            </a>{" "}
-            , transfer from another wallet, or buy on another exchange and send
-            it to your wallet.
+
+        {/* Token Purpose */}
+        <OrderCard order={2} title={"Token Purpose & Utility"} style={"-rotate-6"}>
+          <span className="text-xs sm:text-sm md:text-base">
+            <span className="font-extrabold text-ANTSs">$ANTS</span> drives the ecosystem.<br />
+            Rewards are contribution-based — not speculative.<br />
+            Designed to recognize real value.
           </span>
         </OrderCard>
-        <OrderCard order={3} title={"swap $Sol for $duis"} style={"-rotate-1"}>
-          <span>
-            Paste the token address (CA) into wallet and swap{" "}
-            <span className="bg-gradient-to-r from-[#9945FF] to-[#14F195] inline-block text-transparent bg-clip-text uppercase font-extrabold text-2xl">
-              $SOL
-            </span>{" "}
-            for <span className="font-extrabold text-2xl text-duis">$DUIS</span>
-            .{`There's zero taxes so you don’t need to worry.`}
+
+        {/* Tokenomics */}
+        <OrderCard order={3} title={"Tokenomics & Distribution"} style={"-rotate-1"}>
+          <span className="text-xs sm:text-sm md:text-base">
+            <strong>Total Supply:</strong> 1B ANTS (Fixed)<br /><br />
+            <strong>Liquidity</strong> — 20% &nbsp; <strong>Community Sale</strong> — 20%<br />
+            <strong>Rewards</strong> — 20% &nbsp;&nbsp;&nbsp; <strong>Core Team</strong> — 15%<br />
+            <strong>Marketing</strong> — 15% &nbsp;&nbsp; <strong>Treasury</strong> — 10%
           </span>
         </OrderCard>
-        <OrderCard order={4} title={"you're duis-dawg!‍"} style={"rotate-2"}>
-          <span>
-            Welcome to the <br />
-            <span className="uppercase font-extrabold text-2xl underline decoration-duis">
-              Duis family
-            </span>
-            !
+
+        {/* Roadmap */}
+        <OrderCard order={4} title={"Roadmap"} style={"rotate-2"}>
+          <span className="text-xs sm:text-sm md:text-base">
+            <strong>Phase 1</strong> — Foundation & launch<br />
+            <strong>Phase 2</strong> — Community onboarding<br />
+            <strong>Phase 3</strong> — Contribution rewards<br />
+            <strong>Phase 4</strong> — Ecosystem & tools<br />
+            <strong>Phase 5</strong> — Full sustainability
           </span>
         </OrderCard>
       </div>
 
+      {/* Contract Address */}
       <div className="my-16">
         <ContractAddress />
       </div>
@@ -78,4 +64,4 @@ const HowToBuy = () => {
   );
 };
 
-export default HowToBuy;
+export default AntsSummary

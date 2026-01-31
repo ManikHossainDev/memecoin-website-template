@@ -4,7 +4,7 @@ import Image from "next/image";
 const Card = ({ props: { img, title, desc } }) => {
   return (
     <div className="group relative block h-80 sm:h-96 max-w-80">
-      <span className="absolute inset-0 bg-duis rounded-xl border-2 border-dashed border-black"></span>
+      <span className="absolute inset-0 bg-ANTSs rounded-xl border-2 border-dashed border-black"></span>
 
       <div className="relative h-full transform rounded-xl border-2 border-black bg-white transition-transform -translate-x-2 -translate-y-2 group-hover:translate-x-0 group-hover:translate-y-0">
         <div className="h-full transition-opacity grid grid-rows-4">
@@ -20,7 +20,7 @@ const Card = ({ props: { img, title, desc } }) => {
           </div>
 
           <div className="py-3 text-center font-stopbuck">
-            <h2 className="text-2xl font-medium uppercase text-duis">
+            <h2 className="text-2xl font-medium uppercase text-ANTSs">
               {title}
             </h2>
             <p className="text-lg sm:text-2xl font-thin text-black">{desc}</p>

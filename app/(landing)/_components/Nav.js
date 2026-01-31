@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const navigation = [
   { name: "About", href: "#about" },
@@ -30,47 +31,47 @@ const Nav = () => {
     <nav
       aria-label="Global"
       className={`fixed top-0 left-0 w-full z-[999999] shadow-lg transition-all duration-300 ${
-        isScrolled ? "h-20" : "h-20"
+        isScrolled ? "h-16 sm:h-20" : "h-16 sm:h-20"
       }`}
     >
       <div className="flex items-center justify-between p-2 lg:px-8 mx-auto max-w-screen-xl">
         {/* Logo */}
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <Link href="#" className="-m-1.5 p-1.5">
             <Image
               src="/logo-coin.png"
               width={500}
               height={500}
               className={`transition-all duration-300 ${
-                isScrolled ? "h-14 w-auto" : "h-16 w-auto"
+                isScrolled ? "h-10 sm:h-14 w-auto" : "h-12 sm:h-16 w-auto"
               }`}
               alt="logo coin"
             />
-          </a>
+          </Link>
         </div>
 
         {/* Navigation Links */}
         <div className="hidden lg:flex lg:gap-x-12 cursor-pointer uppercase">
           {navigation.map((item) => (
-            <a
+            <Link
               key={item.name}
               href={item.href}
-              className={`transition duration-200 text-gray-900 text-shadow-duis-not-hover text-2xl font-bold font-stopbuck tracking-wider hover:text-[#FF080E] hover:decoration-solid hover:decoration-gray-500`}
+              className={`transition duration-200 text-gray-900 text-shadow-duis-not-hover md:text-xl xl:text-2xl font-bold font-stopbuck tracking-wider hover:text-[#FF080E] hover:decoration-solid hover:decoration-gray-500`}
             >
               {item.name}
-            </a> 
+            </Link> 
           ))}
         </div>
 
         {/* Buy Button */}
         <div className="lg:flex lg:flex-1 lg:justify-end">
-          <a
+          <Link
             href="https://dexscreener.com/solana/8j5r6kteet9cm6wamq2mwb2sneu97cz1jtksdg76moon"
             target="_blank"
-            className="transition  duration-200 font-stopbuck text-lg sm:text-2xl rounded-xl px-3.5 py-2.5 font-medium text-[#000] hover:text-[#FF080E] shadow-2xl bg-white hover:bg-transparent  hover:outline-red-500 outline outline-2 outline-offset-0"
+            className="transition duration-200 font-stopbuck text-sm sm:text-lg md:text-xl xl:text-2xl rounded-xl px-2 sm:px-3.5 py-1.5 sm:py-2.5 font-medium text-[#000] hover:text-[#FF080E] shadow-2xl bg-white hover:bg-transparent hover:outline-red-500 outline outline-2 outline-offset-0"
           >
             Buy $DUIS
-          </a>
+          </Link>
         </div>
       </div>
     </nav>

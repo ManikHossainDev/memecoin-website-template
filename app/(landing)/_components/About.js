@@ -42,52 +42,52 @@ const About = () => {
         {/* Animated Clouds - Top layer */}
         <div className="absolute -top-11 left-0 w-full overflow-hidden">
           <div className="flex w-full justify-between">
-            <div className="cloud -ms-6" style={{animationDelay: '0s'}}>
-              <Image src="/collection/ant_01.png" alt="" width={150} height={150} className="w-full h-full object-contain" />
-            </div>
-            <div className="cloud -ms-6 rotate-6" style={{animationDelay: '0.3s'}}>
-              <Image src="/collection/ant_02.png" alt="" width={150} height={150} className="w-full h-full object-contain" />
-            </div>
-            <div className="cloud -ms-6" style={{animationDelay: '0.6s'}}>
-              <Image src="/collection/ant_03.png" alt="" width={150} height={150} className="w-full h-full object-contain" />
-            </div>
-            <div className="cloud -ms-6 -rotate-12" style={{animationDelay: '0.9s'}}>
-              <Image src="/collection/ant_04.png" alt="" width={150} height={150} className="w-full h-full object-contain" />
-            </div>
-            <div className="cloud -ms-6" style={{animationDelay: '1.2s'}}>
-              <Image src="/collection/ant_05.png" alt="" width={150} height={150} className="w-full h-full object-contain" />
-            </div>
-            <div className="cloud -ms-6 rotate-12" style={{animationDelay: '1.5s'}}>
-              <Image src="/collection/ant_06.png" alt="" width={150} height={150} className="w-full h-full object-contain" />
-            </div>
-            <div className="cloud -ms-6" style={{animationDelay: '1.8s'}}>
-              <Image src="/collection/ant_07.png" alt="" width={150} height={150} className="w-full h-full object-contain" />
-            </div>
-            <div className="cloud -ms-6 -rotate-6" style={{animationDelay: '2.1s'}}>
-              <Image src="/collection/ant_08.png" alt="" width={150} height={150} className="w-full h-full object-contain" />
-            </div>
-            <div className="cloud -ms-6" style={{animationDelay: '2.4s'}}>
-              <Image src="/collection/ant_09.png" alt="" width={150} height={150} className="w-full h-full object-contain" />
-            </div>
-            <div className="cloud -ms-6" style={{animationDelay: '2.7s'}}>
-              <Image src="/collection/ant_10.png" alt="" width={150} height={150} className="w-full h-full object-contain" />
-            </div>
-            <div className="cloud -ms-6" style={{animationDelay: '3s'}}>
-              <Image src="/collection/ant_11.png" alt="" width={150} height={150} className="w-full h-full object-contain" />
-            </div>
-            <div className="cloud -ms-6 rotate-6" style={{animationDelay: '3.3s'}}>
-              <Image src="/collection/ant_12.png" alt="" width={150} height={150} className="w-full h-full object-contain" />
-            </div>
-            <div className="cloud -ms-6" style={{animationDelay: '3.6s'}}>
-              <Image src="/collection/ant_13.png" alt="" width={150} height={150} className="w-full h-full object-contain" />
-            </div>
-            <div className="cloud -ms-6 -rotate-12" style={{animationDelay: '3.9s'}}>
-              <Image src="/collection/ant_14.png" alt="" width={150} height={150} className="w-full h-full object-contain" />
-            </div>
-            <div className="cloud -ms-6" style={{animationDelay: '4.2s'}}>
-              <Image src="/collection/ant_15.png" alt="" width={150} height={150} className="w-full h-full object-contain" />
-            </div>
-          </div>
+  <div className="cloud -ms-6" style={{animationDelay: '0s'}}>
+    <Image src="/collection/ant_01.png" alt="" width={150} height={150} className="w-20 h-20 md:w-full md:h-full object-contain" />
+  </div>
+  <div className="cloud -ms-6 rotate-6" style={{animationDelay: '0.3s'}}>
+    <Image src="/collection/ant_02.png" alt="" width={150} height={150} className="w-20 h-20 md:w-full md:h-full object-contain" />
+  </div>
+  <div className="cloud -ms-6" style={{animationDelay: '0.6s'}}>
+    <Image src="/collection/ant_03.png" alt="" width={150} height={150} className="w-20 h-20 md:w-full md:h-full object-contain" />
+  </div>
+  <div className="cloud -ms-6 -rotate-12" style={{animationDelay: '0.9s'}}>
+    <Image src="/collection/ant_04.png" alt="" width={150} height={150} className="w-20 h-20 md:w-full md:h-full object-contain" />
+  </div>
+  <div className="cloud -ms-6" style={{animationDelay: '1.2s'}}>
+    <Image src="/collection/ant_05.png" alt="" width={150} height={150} className="w-20 h-20 md:w-full md:h-full object-contain" />
+  </div>
+  <div className="cloud -ms-6 rotate-12" style={{animationDelay: '1.5s'}}>
+    <Image src="/collection/ant_06.png" alt="" width={150} height={150} className="w-20 h-20 md:w-full md:h-full object-contain" />
+  </div>
+  <div className="cloud -ms-6" style={{animationDelay: '1.8s'}}>
+    <Image src="/collection/ant_07.png" alt="" width={150} height={150} className="w-20 h-20 md:w-full md:h-full object-contain" />
+  </div>
+  <div className="cloud -ms-6 -rotate-6" style={{animationDelay: '2.1s'}}>
+    <Image src="/collection/ant_08.png" alt="" width={150} height={150} className="w-20 h-20 md:w-full md:h-full object-contain" />
+  </div>
+  <div className="cloud -ms-6" style={{animationDelay: '2.4s'}}>
+    <Image src="/collection/ant_09.png" alt="" width={150} height={150} className="w-20 h-20 md:w-full md:h-full object-contain" />
+  </div>
+  <div className="cloud -ms-6" style={{animationDelay: '2.7s'}}>
+    <Image src="/collection/ant_10.png" alt="" width={150} height={150} className="w-20 h-20 md:w-full md:h-full object-contain" />
+  </div>
+  <div className="cloud -ms-6" style={{animationDelay: '3s'}}>
+    <Image src="/collection/ant_11.png" alt="" width={150} height={150} className="w-20 h-20 md:w-full md:h-full object-contain" />
+  </div>
+  <div className="cloud -ms-6 rotate-6" style={{animationDelay: '3.3s'}}>
+    <Image src="/collection/ant_12.png" alt="" width={150} height={150} className="w-20 h-20 md:w-full md:h-full object-contain" />
+  </div>
+  <div className="cloud -ms-6" style={{animationDelay: '3.6s'}}>
+    <Image src="/collection/ant_13.png" alt="" width={150} height={150} className="w-20 h-20 md:w-full md:h-full object-contain" />
+  </div>
+  <div className="cloud -ms-6 -rotate-12" style={{animationDelay: '3.9s'}}>
+    <Image src="/collection/ant_14.png" alt="" width={150} height={150} className="w-20 h-20 md:w-full md:h-full object-contain" />
+  </div>
+  <div className="cloud -ms-6" style={{animationDelay: '4.2s'}}>
+    <Image src="/collection/ant_15.png" alt="" width={150} height={150} className="w-20 h-20 md:w-full md:h-full object-contain" />
+  </div>
+</div>
         </div>
       </div>
 

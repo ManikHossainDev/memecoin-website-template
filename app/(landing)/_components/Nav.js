@@ -53,7 +53,6 @@ const Nav = () => {
             />
           </Link>
 
-          {/* Desktop Menu */}
           <div className="hidden lg:flex gap-x-12 uppercase">
             {navigation.map((item) => (
               <Link

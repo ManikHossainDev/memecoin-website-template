@@ -3,34 +3,24 @@ import LinkCardCircle from "@/components/LinkCardCircle";
 
 const cards = [
   {
-    link: "https://t.me/ANTSs_solana",
+    link: "https://t.me/ANTSAnnouncements",
     title: "telegram",
     icon: "Telegram",
   },
   {
-    link: "https://x.com/ANTSsonsolana",
+    link: "https://x.com/ANTS_Community",
     title: "x",
     icon: "X",
   },
   {
-    link: "https://www.instagram.com/nguyen_van_ANTS",
-    title: "Instagram",
-    icon: "Instagram",
+    link: "https://t.me/ANTSCommunityOfficial",
+    title: "telegram",
+    icon: "Telegram",
   },
   {
-    link: "https://www.youtube.com/@lanlanpet",
-    title: "Youtube",
-    icon: "Youtube",
-  },
-  {
-    link: "https://www.tiktok.com/@nguyen_van_ANTS",
+    link: "https://www.tiktok.com/@ants.community",
     title: "Tiktok",
     icon: "Tiktok",
-  },
-  {
-    link: "https://www.facebook.com/gaumeolangANTS",
-    title: "Facebook",
-    icon: "Facebook",
   },
 ];
 
@@ -42,7 +32,7 @@ const Socials = () => {
           Socials
         </h2>
       </div>
-      <div className="flex flex-wrap justify-center gap-4">
+      <div className="flex flex-wrap justify-center gap-2 md:gap-4">
         {cards.map((card, idx) => (
           <LinkCardCircle key={idx} props={card} />
         ))}

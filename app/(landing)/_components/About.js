@@ -2,8 +2,37 @@
 
 import React from "react";
 import Image from "next/image";
+import { useEffect, useRef } from 'react';
 
 const About = () => {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    // Intersection Observer - instant mute/unmute
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          // Instant mute/unmute - kono delay nai
+          
+        });
+      },
+      {
+        threshold: 0.1, // 10% visible holeo trigger
+        rootMargin: '50px' // 50px age thekei trigger hobe
+      }
+    );
+
+    observer.observe(video);
+
+    // Cleanup
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
   return (
     <div className="relative">
       <div className="-mt-14" style={{height: '10px'}}>
@@ -27,11 +56,32 @@ const About = () => {
             animation: cloudFloat 10s ease-in-out infinite;
             display: inline-block;
             flex-shrink: 0;
-            width: 120px;
-            height: 120px;
+            width: 60px;
+            height: 60px;
+          }
+
+          @media (min-width: 480px) {
+            .cloud {
+              width: 80px;
+              height: 80px;
+            }
           }
 
           @media (min-width: 640px) {
+            .cloud {
+              width: 100px;
+              height: 100px;
+            }
+          }
+
+          @media (min-width: 768px) {
+            .cloud {
+              width: 120px;
+              height: 120px;
+            }
+          }
+
+          @media (min-width: 1024px) {
             .cloud {
               width: 150px;
               height: 150px;
@@ -42,43 +92,43 @@ const About = () => {
         {/* Animated Clouds - Top layer */}
         <div className="absolute -top-11 left-0 w-full overflow-hidden">
           <div className="flex w-full justify-between">
-            <div className="cloud -ms-6" style={{animationDelay: '0s'}}>
+            <div className="cloud -ms-2 sm:-ms-4 md:-ms-6" style={{animationDelay: '0s'}}>
               <Image src="/collection/ant_01.png" alt="" width={150} height={150} className="w-full h-full object-contain" />
             </div>
-            <div className="cloud -ms-6 rotate-6" style={{animationDelay: '0.3s'}}>
+            <div className="cloud -ms-2 sm:-ms-4 md:-ms-6 rotate-6" style={{animationDelay: '0.3s'}}>
               <Image src="/collection/ant_02.png" alt="" width={150} height={150} className="w-full h-full object-contain" />
             </div>
-            <div className="cloud -ms-6" style={{animationDelay: '0.6s'}}>
+            <div className="cloud -ms-2 sm:-ms-4 md:-ms-6" style={{animationDelay: '0.6s'}}>
               <Image src="/collection/ant_03.png" alt="" width={150} height={150} className="w-full h-full object-contain" />
             </div>
-            <div className="cloud -ms-6 -rotate-12" style={{animationDelay: '0.9s'}}>
+            <div className="cloud -ms-2 sm:-ms-4 md:-ms-6 -rotate-12" style={{animationDelay: '0.9s'}}>
               <Image src="/collection/ant_04.png" alt="" width={150} height={150} className="w-full h-full object-contain" />
             </div>
-            <div className="cloud -ms-6" style={{animationDelay: '1.2s'}}>
+            <div className="cloud -ms-2 sm:-ms-4 md:-ms-6" style={{animationDelay: '1.2s'}}>
               <Image src="/collection/ant_05.png" alt="" width={150} height={150} className="w-full h-full object-contain" />
             </div>
-            <div className="cloud -ms-6 rotate-12" style={{animationDelay: '1.5s'}}>
+            <div className="cloud -ms-2 sm:-ms-4 md:-ms-6 rotate-12" style={{animationDelay: '1.5s'}}>
               <Image src="/collection/ant_06.png" alt="" width={150} height={150} className="w-full h-full object-contain" />
             </div>
-            <div className="cloud -ms-6" style={{animationDelay: '1.8s'}}>
+            <div className="hidden md:block cloud -ms-2 sm:-ms-4 md:-ms-6" style={{animationDelay: '1.8s'}}>
               <Image src="/collection/ant_15.png" alt="" width={150} height={150} className="w-full h-full object-contain" />
             </div>
-            <div className="cloud -ms-6 -rotate-6" style={{animationDelay: '2.1s'}}>
+            <div className="cloud -ms-2 sm:-ms-4 md:-ms-6 -rotate-6" style={{animationDelay: '2.1s'}}>
               <Image src="/collection/ant_08.png" alt="" width={150} height={150} className="w-full h-full object-contain" />
             </div>
-            <div className="cloud -ms-6" style={{animationDelay: '2.4s'}}>
+            <div className="cloud -ms-2 sm:-ms-4 md:-ms-6" style={{animationDelay: '2.4s'}}>
               <Image src="/collection/ant_09.png" alt="" width={150} height={150} className="w-full h-full object-contain" />
             </div>
-            <div className="cloud -ms-6" style={{animationDelay: '2.7s'}}>
+            <div className="cloud -ms-2 sm:-ms-4 md:-ms-6" style={{animationDelay: '2.7s'}}>
               <Image src="/collection/ant_10.png" alt="" width={150} height={150} className="w-full h-full object-contain" />
             </div>
-            <div className="cloud -ms-6 rotate-6" style={{animationDelay: '3.3s'}}>
+            <div className="cloud -ms-2 sm:-ms-4 md:-ms-6 rotate-6" style={{animationDelay: '3.3s'}}>
               <Image src="/collection/ant_12.png" alt="" width={150} height={150} className="w-full h-full object-contain" />
             </div>
-            <div className="cloud -ms-6" style={{animationDelay: '3.6s'}}>
+            <div className="cloud -ms-2 sm:-ms-4 md:-ms-6" style={{animationDelay: '3.6s'}}>
               <Image src="/collection/ant_13.png" alt="" width={150} height={150} className="w-full h-full object-contain" />
             </div>
-            <div className="cloud -ms-6 -rotate-12" style={{animationDelay: '3.9s'}}>
+            <div className="cloud -ms-2 sm:-ms-4 md:-ms-6 -rotate-12" style={{animationDelay: '3.9s'}}>
               <Image src="/collection/ant_14.png" alt="" width={150} height={150} className="w-full h-full object-contain" />
             </div>
           </div>
@@ -90,101 +140,86 @@ const About = () => {
           <h2 className="font-stopbuck text-4xl  xl:text-6xl text-red-500 text-shadow text-center mt-14">
             About Ants
           </h2>
-          <h3 className="font-stopbuck text-2xl text-center italic text-black">
-            {`(ANTS Community Era)`}
+          <h3 className="font-stopbuck  text-base  md:text-xl text-center italic text-black">
+            {`(One ANT is weak. Together, we are unstoppable.)`}
           </h3>
         </div>
           
         <div className="xl:container mx-auto grid lg:grid-cols-2 gap-6 items-stretch">
-  {/* Video Section */}
-  <div className="w-full h-full">
-    <video
-      className="w-full h-[70vh] object-cover rounded-lg"
-      src="/collection/Abount.mp4"
-      autoPlay
-      loop
-      muted
-      playsInline
-    />
-  </div>
+          {/* Video Section */}
+          <div className="w-full h-full mt-1">
+            <video
+              ref={videoRef}
+              className="w-full md:h-[50vh] lg:h-[60] xl:h-[70vh] object-cover rounded-lg"
+              src="/collection/Abount.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              preload="auto"
+            />
+          </div>
 
-  {/* Text Section */}
+          {/* Text Section */}
           <div className="">
-  <div className="font-mono text-[#33271e] tracking-wide text-justify ">
+            <div className="font-mono text-[#33271e] tracking-wide lg:text-justify ">
 
-    {/* Header */}
-    <h2 className="text-xl sm:text-2xl md:text-4xl  font-bold mb-2">
-      ANTS — Collective Strength
-    </h2>
+              {/* Header */}
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2">
+                ANTS — Collective Strength
+              </h2>
 
-    <p className="text-md sm:text-lg md:text-xl mb-3">
-      ANTS is a community-driven digital asset ecosystem built on fairness,
-      transparency, and long-term cooperation, operating on the Binance Smart
-      Chain. It is designed as a sustainable alternative to short-term,
-      speculative projects.
-    </p>
+              <p className="text-md sm:text-lg md:text-xl mb-3">
+                ANTS is a community driven digital asset ecosystem built on fairness, transparency and long term cooperation. Operating on the Binance Smart Chain, ANTS is designed as a sustainable alternative to short term, speculative projects that dominate the digital asset space.
+              </p>
 
-    <p className="text-md sm:text-lg md:text-xl mb-3">
-      Rather than focusing on hype or rapid price movement, ANTS emphasizes
-      collective participation, discipline, and shared responsibility. A united
-      community can build resilient systems that endure over time.
-    </p>
+              <p className="text-md sm:text-lg md:text-xl mb-3">
+                Rather than focusing on hype or rapid price movements, ANTS emphasizes collective participation, discipline and shared responsibility. The project is founded on the belief that while a single participant has limited impact, a united community can build resilient systems that endure over time.
+              </p>
 
-    {/* Transparency */}
-    <h3 className="text-md sm:text-xl md:text-2xl font-semibold mb-2">
-      Transparency & Trust
-    </h3>
+              {/* Transparency */}
+              <h3 className="hidden md:block  text-md sm:text-xl md:text-2xl font-semibold mb-2">
+                Transparency & Trust
+              </h3>
 
-    <p className="text-md sm:text-lg md:text-xl mb-3">
-      Clear communication and visible decision-making form the foundation of the
-      ecosystem. Every participant contributes to its strength, with a focus on
-      long-term sustainability over aggressive growth.
-    </p>
+              <p className="hidden md:block text-md sm:text-lg md:text-xl mb-3">
+                Transparency and trust form the foundation of the ANTS ecosystem. Clear communication and visible decision making ensure that every participant contributes to the strength and stability of the network.
+              </p>
 
-    {/* Vision */}
-    <h3 className="text-md sm:text-xl md:text-2xl font-semibold mb-2">
-      Vision & Principles
-    </h3>
+              {/* Vision */}
+              <h3 className="hidden md:block text-md sm:text-xl md:text-2xl font-semibold mb-2">
+                Vision & Principles
+              </h3>
 
-    <ul className="list-disc pl-6 text-md sm:text-lg md:text-xl mb-3">
-  <li>
-    Long-term thinking and stability — focusing on sustainable growth and
-    decisions that benefit the ecosystem over time rather than short-term gains.
-  </li>
-  <li>
-    Community responsibility — encouraging every member to act with honesty,
-    accountability, and a shared sense of ownership.
-  </li>
-  
-</ul>
+              <p className="hidden md:block text-md sm:text-lg md:text-xl mb-3">
+                ANTS prioritizes long term thinking and sustainable growth. Success is measured not by aggressive expansion or short term speculation, but by community alignment, accountability and lasting value creation.
+              </p>
+            </div>
+          </div>
+        </div>
 
-    
-  </div>
+        <div className="hidden lg:block xl:container mx-auto xl:mt-10 font-mono text-base md:text-lg xl:text-xl text-[#33271e] tracking-widest text-center">
+          <p>
+            From the very beginning 🐜,{" "}
+            <span className="text-base md:text-lg xl:text-2xl font-bold">ANTS</span>{" "}
+            was built on fairness, transparency, and long-term cooperation.
+            It is not the result of hype or short-term speculation, but a
+            disciplined, community-driven initiative.
+          </p>
+
+          <p className="text-base md:text-lg xl:text-2xl xl:p-10">
+            Today,{" "}
+            <span className="text-md md:text-lg xl:text-2xl font-bold underline decoration-ANTSs">
+              ANTS
+            </span>{" "}
+            moves forward with the strength of a united community, and is
+            built to endure forever on{" "}
+            <span className="text-md md:text-lg xl:text-2xl bg-gradient-to-r from-[#9945FF] to-[#14F195] inline-block text-transparent bg-clip-text font-bold">
+              Binance Smart Chain
+            </span>
+          </p>
+        </div>
       </div>
-      
-    </div>
-    <div className="xl:container mx-auto xl:mt-10 font-mono text-base md:text-lg xl:text-xl text-[#33271e] tracking-widest text-center">
-  <p>
-    From the very beginning 🐜,{" "}
-    <span className="text-base md:text-lg xl:text-2xl font-bold">ANTS</span>{" "}
-    was built on fairness, transparency, and long-term cooperation.
-    It is not the result of hype or short-term speculation, but a
-    disciplined, community-driven initiative.
-  </p>
-
-  <p className="text-base md:text-lg xl:text-2xl xl:p-10">
-    Today,{" "}
-    <span className="text-md md:text-lg xl:text-2xl font-bold underline decoration-ANTSs">
-      ANTS
-    </span>{" "}
-    moves forward with the strength of a united community, and is
-    built to endure forever on{" "}
-    <span className="text-md md:text-lg xl:text-2xl bg-gradient-to-r from-[#9945FF] to-[#14F195] inline-block text-transparent bg-clip-text font-bold">
-      Binance Smart Chain
-    </span>
-  </p>
-</div>
-    </div>
     </div>
   );
 };

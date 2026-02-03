@@ -38,10 +38,11 @@ const Exchanges = () => {
         }
       `}</style>
 
-      <div id="exchanges" className="max-w-[85rem] mx-auto  md:py-12 px-4">
+      <div
+        id="exchanges"
+        className=" xl:container mx-auto md:py-5 px-1 xl:px-4"
+      >
         <div className="my-16">
-          {/* <AntTrail /> */}
-
           <h2
             className="text-center mt-4 text-red-500"
             style={{
@@ -54,28 +55,27 @@ const Exchanges = () => {
           </h2>
 
           <h3
-            className="text-center mt-2 text-black"
+            className="text-center text-sm md:text-md mt-2 text-black"
             style={{
               fontFamily: "stopbuck, cursive",
-              fontSize: "clamp(1.1rem, 2.5vw, 1.5rem)",
             }}
           >
             The colony is watching... probably nothing 🤔
           </h3>
 
-          <div className="mt-4">
-            <video
-              className="w-full h-[50vh] object-cover rounded-lg"
-              src="/videoplayback.mp4"
-              autoPlay
-              loop
-              muted
-              playsInline
-            />
+          <div className="mt-4 w-full">
+            <div className="mt-4 w-full relative overflow-hidden rounded-lg">
+                <iframe
+                src="https://pancakeswap.finance/swap?outputCurrency=0x5e27C139b478ACab178FbcA38494183EED8Cce56"
+                width="100%"
+                height="800"
+                style={{ border: "none" }}
+              />
+            </div>
           </div>
 
           <div className="flex justify-center mt-4 gap-3">
-            {Array.from({ length: 10 }).map((_, i) => (
+            {Array.from({ length: 8 }).map((_, i) => (
               <span
                 key={i}
                 style={{

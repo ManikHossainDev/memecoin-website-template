@@ -5,7 +5,7 @@ import { Copy } from "@/components/icons";
 
 import { contractAddress } from "@/constants";
 
-const ContractAddress = () => {
+const  ContractAddress = () => {
   const [copySuccess, setCopySuccess] = useState(false);
   const [textToCopy] = useState(contractAddress);
 

@@ -28,7 +28,7 @@ const Tokenomics = () => {
         {/* Pie Chart */}
         <div className="flex justify-center items-center px-1">
           <PieChart
-            width={480}
+            width={580}
             height={500}
             style={{ maxWidth: '100%', height: 'auto' }}
           >

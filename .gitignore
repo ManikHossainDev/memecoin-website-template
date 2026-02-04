@@ -1,7 +1,5 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
-/node_modules
+# Dependencies
+/node_modules/
 /.pnp
 .pnp.*
 .yarn/*
@@ -10,31 +8,101 @@
 !.yarn/releases
 !.yarn/versions
 
-# testing
+# Testing
 /coverage
 
-# next.js
+# Next.js
 /.next/
 /out/
+.next/**
+!.next/static
 
-# production
-/build
+# Production builds
+/build/
+/dist/
+/public/build
 
-# misc
-.DS_Store
-*.pem
+# OpenNext specific
+.open-next/
+!.open-next/static
 
-# debug
+# Cloudflare Workers
+.cloudflare/
+workers-site/
+.wrangler/
+
+# Development
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment variables
+.env*
+!.env.example
+
+# Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.log
 
-# env files (can opt-in for committing if needed)
-.env*
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 
-# vercel
-.vercel
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
 
-# typescript
+# TypeScript
 *.tsbuildinfo
 next-env.d.ts
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# Debug files
+debug.log
+
+# Local configuration files
+*.local
+
+# Editor files
+*.orig
+
+# Compiled CSS
+*.css.map
+
+# Lock files
+pnpm-lock.yaml
+yarn.lock
+
+# Cloudflare specific
+.cloudflare/
+.cloudflare/*
+!.cloudflare/.gitignore
+
+# Wrangler files
+wrangler-devices.json
+.wrangler/
+!.wrangler/.gitignore
+
+# Secrets and sensitive data
+secrets.json
+SECRET_KEY
+secret.key

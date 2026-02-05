@@ -9,6 +9,8 @@ const navigation = [
   { name: "Exchanges", href: "#exchanges" },
   { name: "Tokenomics", href: "#tokenomics" },
   { name: "How to buy", href: "#ants" },
+  { name: "Rewards", href: "#rewards" },
+  { name: "Litepaper", href: "#litepaper" },
 ];
 
 const Nav = () => {

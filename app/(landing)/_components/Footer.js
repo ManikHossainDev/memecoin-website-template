@@ -59,7 +59,7 @@ const Footer = () => {
             <div className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24">
               <Image
                 className="w-full h-full object-contain"
-                src="/collection/ant_07.png"
+                src="/collection/ant_06.png"
                 width={100}
                 height={100}
                 alt="ANTS 4"

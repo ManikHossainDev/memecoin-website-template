@@ -137,10 +137,10 @@ const About = () => {
 
       <div id="about" className=" my-7 md:my-10 xl:mt-20 px-1 md:px-2 xL:px-4 py-10 sm:pt-14 mx-auto">
         <div className=" mb-5">
-          <h2 className="font-stopbuck text-4xl  xl:text-6xl text-red-500 text-shadow text-center mt-14">
+          <h2 className="font-stopbuck text-xl md:text-4xl  xl:text-6xl text-red-500 text-shadow text-center mt-14">
             About Ants
           </h2>
-          <h3 className="font-stopbuck  text-base  md:text-xl text-center italic text-black">
+          <h3 className="font-roboto font-stopbuck  text-sm  md:text-xl text-center italic text-black">
             {`(One ANT is weak. Together, we are unstoppable.)`}
           </h3>
         </div>
@@ -150,7 +150,7 @@ const About = () => {
           <div className="w-full h-full mt-1">
             <video
               ref={videoRef}
-              className="w-full md:h-[50vh] lg:h-[60] xl:h-[70vh] object-cover rounded-lg"
+              className="w-full md:h-[50vh] lg:h-[60vh] xl:h-[61vh] object-cover rounded-lg"
               src="/collection/Abount.mp4"
               autoPlay
               loop
@@ -161,66 +161,63 @@ const About = () => {
           </div>
 
           {/* Text Section */}
-          <div className="">
-            <div className="font-mono text-[#33271e] tracking-wide lg:text-justify ">
+          <div className="font-roboto text-[#33271e] tracking-wide lg:text-justify">
 
-              {/* Header */}
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2">
-                ANTS — Collective Strength
-              </h2>
+            {/* Header */}
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2">
+              ANTS — Collective Strength
+            </h2>
 
-              <p className="text-md sm:text-lg md:text-xl mb-3">
-                ANTS is a community driven digital asset ecosystem built on fairness, transparency and long term cooperation. Operating on the Binance Smart Chain, ANTS is designed as a sustainable alternative to short term, speculative projects that dominate the digital asset space.
-              </p>
+            <p className="text-md sm:text-lg md:text-xl lg:text-md xl:text-xl mb-3">
+              ANTS is a community driven digital asset ecosystem built on fairness, transparency and long term cooperation. Operating on the Binance Smart Chain, ANTS is designed as a sustainable alternative to short term, speculative projects that dominate the digital asset space.
+            </p>
 
-              <p className="text-md sm:text-lg md:text-xl mb-3">
-                Rather than focusing on hype or rapid price movements, ANTS emphasizes collective participation, discipline and shared responsibility. The project is founded on the belief that while a single participant has limited impact, a united community can build resilient systems that endure over time.
-              </p>
+            <p className="text-md sm:text-lg md:text-xl lg:text-md xl:text-xl mb-5">
+              Rather than focusing on hype or rapid price movements, ANTS emphasizes collective participation, discipline and shared responsibility. The project is founded on the belief that while a single participant has limited impact, a united community can build resilient systems that endure over time.
+            </p>
+              
+            {/* Transparency */}
+            <h3 className="hidden md:block text-md sm:text-xl md:text-2xl font-semibold mb-2">
+              Transparency & Trust
+            </h3>
 
-              {/* Transparency */}
-              <h3 className="hidden md:block  text-md sm:text-xl md:text-2xl font-semibold mb-2">
-                Transparency & Trust
-              </h3>
+            <p className="hidden md:block text-md sm:text-lg md:text-xl mb-5">
+              Transparency and trust form the foundation of the ANTS ecosystem. Clear communication and visible decision making ensure that every participant contributes to the strength and stability of the network.
+            </p>
 
-              <p className="hidden md:block text-md sm:text-lg md:text-xl mb-3">
-                Transparency and trust form the foundation of the ANTS ecosystem. Clear communication and visible decision making ensure that every participant contributes to the strength and stability of the network.
-              </p>
+            {/* Vision */}
+            <h3 className="hidden md:block text-md sm:text-xl md:text-2xl font-semibold mb-2">
+              Vision & Principles
+            </h3>
 
-              {/* Vision */}
-              <h3 className="hidden md:block text-md sm:text-xl md:text-2xl font-semibold mb-2">
-                Vision & Principles
-              </h3>
-
-              <p className="hidden md:block text-md sm:text-lg md:text-xl mb-3">
-                ANTS prioritizes long term thinking and sustainable growth. Success is measured not by aggressive expansion or short term speculation, but by community alignment, accountability and lasting value creation.
-              </p>
-            </div>
+            <p className="hidden md:block text-md sm:text-lg md:text-xl mb-5">
+              ANTS prioritizes long term thinking and sustainable growth. Success is measured not by aggressive expansion or short term speculation, but by community alignment, accountability and lasting value creation.
+            </p>
           </div>
         </div>
+        <div className="font-roboto lg:block xl:container mx-auto xl:mt-10 font-roboto text-base md:text-lg xl:text-xl text-[#33271e] tracking-widest text-center">
+            <p>
+              From the very beginning 🐜,{" "}
+              <span className="text-base md:text-lg xl:text-2xl font-bold">ANTS</span>{" "}
+              was built on fairness, transparency, and long-term cooperation.
+              It is not the result of hype or short-term speculation, but a
+              disciplined, community-driven initiative.
+            </p>
 
-        <div className="hidden lg:block xl:container mx-auto xl:mt-10 font-mono text-base md:text-lg xl:text-xl text-[#33271e] tracking-widest text-center">
-          <p>
-            From the very beginning 🐜,{" "}
-            <span className="text-base md:text-lg xl:text-2xl font-bold">ANTS</span>{" "}
-            was built on fairness, transparency, and long-term cooperation.
-            It is not the result of hype or short-term speculation, but a
-            disciplined, community-driven initiative.
-          </p>
-
-          <p className="text-base md:text-lg xl:text-2xl xl:p-10">
-            Today,{" "}
-            <span className="text-md md:text-lg xl:text-2xl font-bold underline decoration-ANTSs">
-              ANTS
-            </span>{" "}
-            moves forward with the strength of a united community, and is
-            built to endure forever on{" "}
-            <span className="text-md md:text-lg xl:text-2xl bg-gradient-to-r from-[#9945FF] to-[#14F195] inline-block text-transparent bg-clip-text font-bold">
-              Binance Smart Chain
-            </span>
-          </p>
+            <p className="font-roboto text-base md:text-lg xl:text-2xl xl:p-10">
+              Today,{" "}
+              <span className="text-md md:text-lg xl:text-2xl font-bold underline decoration-ANTSs">
+                ANTS
+              </span>{" "}
+              moves forward with the strength of a united community, and is
+              built to endure forever on{" "}
+              <span className="text-md md:text-lg xl:text-2xl bg-gradient-to-r from-[#9945FF] to-[#14F195] inline-block text-transparent bg-clip-text font-bold">
+                Binance Smart Chain
+              </span>
+            </p>
         </div>
-      </div>
-    </div>
+  </div>
+</div>
   );
 };
 

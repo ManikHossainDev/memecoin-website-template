@@ -7,7 +7,7 @@ const AntsSummary = () => {
     <div id="ants" className="max-w-[85rem] mx-auto p-8 md:p-12">
       {/* Header */}
       <div className="my-16">
-        <h2 className="font-stopbuck text-6xl text-red-500 text-duis text-shadow text-center">
+        <h2 className="font-stopbuck text-xl sm:text-4xl md:text-6xl text-red-500 text-duis text-shadow text-center">
           How To Buy
         </h2>
       </div>
@@ -37,7 +37,7 @@ const AntsSummary = () => {
         <OrderCard order={2} title={"connect to dex"} style={ "rotate-0 md:-rotate-6"}>
             <span>
             If you don’t have any{" "}
-            <span className="bg-gradient-to-r from-[#9945FF] to-[#14F195] inline-block text-transparent bg-clip-text uppercase font-extrabold text-2xl">
+            <span className="bg-gradient-to-r from-[#9945FF] to-[#14F195] inline-block text-transparent bg-clip-text uppercase font-extrabold text-xl md:text-2xl">
               $BNB
             </span>
             , you can buy directly on{" "}
@@ -57,10 +57,10 @@ const AntsSummary = () => {
         <OrderCard order={3} title={"swap $BNB for $ANTS"} style={"-rotate-1"}>
           <span>
             Paste the token address (CA) into wallet and swap{" "}
-            <span className="bg-gradient-to-r from-[#9945FF] to-[#14F195] inline-block text-transparent bg-clip-text uppercase font-extrabold text-2xl">
+            <span className="bg-gradient-to-r from-[#9945FF] to-[#14F195] inline-block text-transparent bg-clip-text uppercase font-extrabold text-xl md:text-2xl">
               $BNB
             </span>{" "}
-            for <span className="font-extrabold text-2xl text-duis">$ANTS</span>
+            for <span className="font-extrabold text-xl md:text-2xl text-duis">$ANTS</span>
             .{`There's zero taxes so you don’t need to worry.`}
           </span>
         </OrderCard>

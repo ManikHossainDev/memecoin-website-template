@@ -17,7 +17,7 @@ const Tokenomics = () => {
   return (
     <div id="tokenomics" className="xl:container mx-auto py-12">
       <div className="my-16">
-        <h2 className="font-stopbuck text-4xl xl:text-6xl text-red-500 text-shadow text-center">
+        <h2 className="font-stopbuck text-xl md:text-4xl xl:text-6xl text-red-500 text-shadow text-center">
           Tokenomics
         </h2>
       </div>
@@ -66,7 +66,7 @@ const Tokenomics = () => {
             />
 
         {/* Right-side Values */}
-        <div className="md:ml-6 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 md:px-4 lg:px-0 gap-1 md:gap-4 lg:gap-10 xl:gap-16">
+        <div className="md:ml-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 px-4 sm:px-0 md:px-4 lg:px-0 gap-1 md:gap-4 lg:gap-10 xl:gap-16">
           {tokenomicsData.map((entry, index) => (
             <div key={index} className="flex items-center gap-3 ">
               {/* Color box */}
@@ -76,7 +76,7 @@ const Tokenomics = () => {
               ></div>
               {/* Name and value */}
               <div className="flex items-center">
-                <span className="font-semibold text-black text-sm md:text-lg">{entry.name}</span>
+                <span className="font-semibold text-black text-md sm:text-sm md:text-lg">{entry.name}</span>
                 <span className="text-gray-600">{entry.value}%</span>
               </div>
                

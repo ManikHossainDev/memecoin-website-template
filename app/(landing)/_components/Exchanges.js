@@ -64,14 +64,14 @@ const Exchanges = () => {
           </h3>
 
           <div className="mt-4 w-full">
-            <div className="mt-4 w-full relative overflow-hidden rounded-lg">
+            {/* <div className="mt-4 w-full relative overflow-hidden rounded-lg">
                 <iframe
                 src="https://pancakeswap.finance/swap?outputCurrency=0x5e27C139b478ACab178FbcA38494183EED8Cce56"
                 width="100%"
                 height="800"
                 style={{ border: "none" }}
               />
-            </div>
+            </div> */}
           </div>
 
           <div className="flex justify-center mt-4 gap-3">

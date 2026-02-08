@@ -24,7 +24,7 @@ export default function Home() {
             <span className="h-[3px] flex-1 bg-red-500"></span>
             <div>
               <Image
-                className=""
+                className="w-[100px] h-[100px] md:w-full md:h-full"
                 src="/logo-coin.png"
                 width={300}
                 height={300}

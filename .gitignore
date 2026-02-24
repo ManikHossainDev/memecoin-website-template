@@ -39,7 +39,6 @@ workers-site/
 *~
 
 # Environment variables
-.env*
 !.env.example
 
 # Logs
@@ -106,3 +105,4 @@ wrangler-devices.json
 secrets.json
 SECRET_KEY
 secret.key
+config.bat
